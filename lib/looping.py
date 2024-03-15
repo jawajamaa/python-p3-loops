@@ -14,14 +14,30 @@ def square_integers(int_list):
     int_list = [int**2 for int in int_list]
     return int_list
 
+# def fizzbuzz_Printer():
+#     for i in range(100):
+#         print (fizzbuzz(i))
+
+
+# def fizzbuzz(i):
+#     if i % 3 == 0 and i % 5 == 0:
+#         return "FizzBuzz"
+#     elif i % 3 == 0:
+#         return "Fizz"
+#     elif i % 5 == 0:
+#         return "Buzz"
+#     else:
+#         return f"{i}"
+
 def fizzbuzz():
-    i = 0
-    while i > 100:
-        if i % 3 == 0:
-            print ("Fizz")
-        elif i % 5 == 0:
-            print ("Buzz")
-        elif i % 3 == 0 and i % 5 == 0:
-            print("FizzBuzz")
-        else:
-            print(f"{i}")
+   i = 1
+   while i <= 100:
+       if i % 3 == 0 and i % 5 == 0:
+           print("FizzBuzz")
+       elif i % 3 == 0:
+           print ("Fizz")
+       elif i % 5 == 0:
+           print ("Buzz")
+       else:
+           print(f"{i}")
+       i += 1
